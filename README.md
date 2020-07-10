@@ -55,5 +55,10 @@ URls for the project repo and deploy
 ### Slides
 
 URls for the project presentation (slides)
+<<<<<<< HEAD
 [Link Slides.com](http://slides.com)# whatiread-project1
+# whatiread-project1
+=======
+[Link Slides.com](http://slides.com)
+>>>>>>> 2cabb45db3e7cae7dc53c24f5613e9ef5128d6e8
 # whatiread-project1
