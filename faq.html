@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Responsive Navbar</title>
+    <title>FAQ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -13,19 +13,35 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">What I read?</label>
-        <ul>
-            <li><a class="" href="whatiread.html">What I read?</a></li>
-            <li><a class="" href="faq.html">faQ</a></li>
-            <li><a class="" href="signup.html">Sign up</a></li>
-            <li><a class="" href="login.html">Log in</a></li>
-        </ul>
-    </nav>
+
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html"><img class="logo" src="img/logo.png"></a>
+            <ul>
+                <li><a class="" href="whatiread.html">What I read?</a></li>
+                <li><a class="active" href="faq.html">faQ</a></li>
+                <li><a class="" href="signup.html">Sign up</a></li>
+                <li><a class="" href="login.html">Log in</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div class="img-header-faq">
+                     <div>
+                <h1>FAQ</h1>
+            </div>
+        </div>
+
+    </section>
+
 
     <section>
         <div class="container-faq">
@@ -76,8 +92,15 @@
 
         </div>
     </section>
-
-
 </body>
+
+<footer>
+    <div>
+        <p>Project 1. Do it during the Ironhack bootcamp - BCN 2020 by Marina Urbano</p>
+    </div>
+    <div>
+        <figure><img src="img/logo-blanco.png" alt="logo" /></figure>
+    </div>
+</footer>
 
 </html>
