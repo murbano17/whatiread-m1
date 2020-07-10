@@ -22,7 +22,9 @@ Extra features you want to add once your MVP is done
 
 ## Wireframes    
 
-<img src="/Users/murbano/whatiread-M1/wireframes/wireframes-m1.png" style="zoom:50%;" />
+!["wireframes"](/Users/murbano/whatiread-M1/wireframes/wireframes-m1.png)
+
+
 
 
 ## Data structure
