@@ -23,7 +23,7 @@ Extra features you want to add once your MVP is done
 
 ## Wireframes    
 
-![wireframes.m1](/Users/murbano/Documents/wireframes.m1.png)
+![]()
 
 
 ## Data structure
