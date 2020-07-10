@@ -20,10 +20,9 @@ Te acabas un libro y no sabes qué libro empezar? ***What I read next?*** te da 
 
 Extra features you want to add once your MVP is done
 
-
 ## Wireframes    
 
-![]()
+<img src="/Users/murbano/whatiread-M1/wireframes/wireframes-m1.png" style="zoom:50%;" />
 
 
 ## Data structure
