@@ -22,7 +22,7 @@ Extra features you want to add once your MVP is done
 
 ## Wireframes    
 
-!["wireframes"](/Users/murbano/whatiread-M1/wireframes/wireframes-m1.png)
+![](/wireframes/wireframes-m1.png)
 
 
 
