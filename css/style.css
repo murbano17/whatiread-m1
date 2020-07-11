@@ -275,6 +275,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .container-section2 {
   display: flex;
   flex-direction: column;
@@ -302,6 +303,7 @@ a:hover {
   align-items: center;
   width: 100%;
 }
+
 .img-header-faq h1 {
   color: white;
   font-size: 5rem;
@@ -348,6 +350,8 @@ a:hover {
 
 /* What I read - buttons*/
 
+
+
 .search-button {
   background-color: white;
   color: black;
@@ -368,6 +372,30 @@ a:hover {
   color: #77c197;
   background-color: white;
   box-shadow: 5px 5px 0 white;
+}
+
+.allsearchbar {
+  background: url(../img/book-coffee.jpg) no-repeat center center / cover;
+
+}
+
+
+.buttons-search {
+  width: 100%;
+  border: 3px solid black;
+}
+
+.results {
+  border: 3px solid yellow;
+}
+
+.book1 {
+  background-color: rgba(119, 193, 151, 0.2);
+}
+
+.book1 img {
+  width: 150px;
+
 }
 
 /*footer*/
@@ -444,14 +472,14 @@ footer p {
   margin: 5px 0px;
 }
 
-.form-wrapper > form {
+.form-wrapper>form {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   width: 100%;
 }
 
-.form-wrapper > form > input {
+.form-wrapper>form>input {
   margin-bottom: 10px;
   width: 100%;
 }
@@ -497,7 +525,7 @@ footer p {
   background-color: #77c197;
 }
 
-.signup-form > input {
+.signup-form>input {
   border: 0;
 }
 
@@ -535,7 +563,7 @@ footer p {
     color: white;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 }
@@ -545,9 +573,11 @@ footer p {
     display: flex;
     flex-direction: row;
   }
+
   .text-section2 {
     width: 100%;
   }
+
   .yellowbooksimg {
     background-size: cover;
   }
