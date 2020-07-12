@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body background="img/background-books.jpg">
@@ -20,7 +23,7 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <img class="logo" src="img/logo.png">
+            <a href="index.html"><img class="logo" src="img/logo.png"></a>
             <ul>
                 <li><a class="" href="index.html">Home</a></li>
                 <li><a class="" href="whatiread.html">What I read?</a></li>
@@ -36,10 +39,10 @@
             <a href="index.html"> <img class="logoForm" src="img/logo.png" alt="book-logo"> </a>
             <h2>Sign Up</h2>
             <form class="signup-form" action="">
+                <p>Name</p>
+                <input type="text" id="name" placeholder="Your name" />
                 <p>Email</p>
                 <input type="text" id="email" placeholder="name@email.com" />
-                <p>Repeat Email</p>
-                <input type="text" id="repeatemail" placeholder="name@email.com" />
                 <p>Password</p>
                 <input type="password" id="password" placeholder="****" />
                 <p>Repeat Password </p>
@@ -59,6 +62,9 @@
             <figure><img src="img/logo-blanco.png" alt="logo" /></figure>
         </div>
     </footer>
+
+    <script src="src/Singup.js"></script>
+    <script src="src/User.js"></script>
 </body>
 
 </html>

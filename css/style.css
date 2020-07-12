@@ -157,7 +157,6 @@ nav {
 }
 
 img.logo {
-  color: #78c197;
   padding: 5px 50px;
   height: 80px;
 }
@@ -182,13 +181,13 @@ nav ul li a {
 
 a.active,
 a:hover {
-  color: #78c197;
+  color: rgb(132,169,172);
   transition: 0.5s;
 }
 
 .checkbtn {
   font-size: 30px;
-  color: #78c197;
+  color: rgb(32,64,81);
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -225,7 +224,7 @@ a:hover {
   font-size: 5em;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: rgba(119, 193, 151, 0.6);
+  background-color: rgba(32,64,81,.7);
   margin: 2rem;
   padding: 2rem;
   /*transform: skew(-5deg, 0deg);*/
@@ -238,11 +237,11 @@ a:hover {
   margin: 0.3rem;
   font-size: 1.3rem;
   text-transform: uppercase;
-  padding: 0.375rem 0.75rem;
-  border: 2px solid #77c197;
-  background-color: #77c197;
+  padding: 0.37rem 0.75rem;
+  border: 2px solid rgb(132,169,172);
+  background-color: rgb(132,169,172);
   color: white;
-  box-shadow: 8px 8px 0 rgba(48, 104, 77, 1);
+  box-shadow: 8px 8px 0 rgba(32,64,81,.7);
 }
 
 .go-button:hover,
@@ -252,183 +251,190 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/*button home/section2*/
-.go-button2 {
-  margin: 1rem 0;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  padding: 0.375rem 0.75rem;
-  background-color: #77c197;
-  border: none;
-  color: white;
-}
-
-.go-button2:hover,
-.go-button2:active,
-.go-button2:focus {
-  color: #77c197;
-  background-color: white;
-  border: 1px solid #77c197;
-}
-
 /* home/section2*/
-.container-section2 {
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
+
+.section2 i{
+  color: #204051;
+  font-size: 40px;
+  margin-bottom: 10px;
+} 
+
+.section2 h3{
+font-size: 2em;
+text-transform: uppercase;
+font-weight: 600;
+color: #204051;
+line-height: 1.5em;
+text-align: center;
+
 }
 
-.container-section2 {
-  display: flex;
-  flex-direction: column;
-}
+.section2 p{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+ 
+  }
 
-.yellowbooksimg {
-  padding: 1.5rem;
-}
-
-.yellowbooksimg img {
+.whoweare, .whatweoffer, .joinyourexp {
+  background-color: #e7dfd5;
+  padding: 2rem;
   width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.text-section2 {
-  font-size: 3em;
-  padding: 4rem;
-}
+
+
+
 
 /* What I read - buttons*/
 
 /*search bar*/
 
-
-
 .searchbar-container {
   background: url(../img/book-coffee.jpg) no-repeat center center / cover;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .searchbar-container h1 {
+  font-family: 'Josefin Sans';
   font-size: 3rem;
   text-align: center;
   font-weight: 600;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: rgba(32,64,81);
+  
   
 }
 
-.allsearchbar{
-  padding: 20px;
-  
-  }
-
 .searchbar-container h3{
-  margin: 3rem;
+  margin: .5rem;
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
   padding: 1rem;
   color: white;
-  background-color: rgba(119, 193, 151, 0.6);
+  background-color: rgba(32,64,81,.7);
 
 }
+
+
 .searchbar {
   font-size: 1rem;
   width: 100%;
   font-family: "Lato";
   background-color: rgba(255, 255, 255);
-  border: 2px solid rgba(119, 193, 151, 0.6);
+  border: 2px solid rgba(32,64,81);
   height: 3rem;
   padding: 1rem;
-  box-shadow: 5px 5px 0 rgba(119, 193, 151, 0.6);
-
+  box-shadow: 3px 3px 0 rgba(32,64,81);
+  margin-top: 2rem;
+ 
 }
 
-.search-button {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border: none;
-  font-family: "Lato";
-  font-size: 2em;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 50px;
-  margin: 30px;
-  
-}
-
-.search-button:hover,
-.search-button:active,
-.search-button:focus {
-  color: white;
-  background-color: #77c197;
-}
-
+/* Popular subjects */
 
 .buttons-search {
   width: 100%;
-  border: 2px solid yellow;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+}
+
+.popular-subjects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.popular-subjects h2 {
+font-weight: 600;
+color: rgba(32,64,81);
+padding-left: 20px;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-family: 'Josefin Sans';
+text-align: center;
 
 }
 
 .input-button {
+  width:300px;
   background-color: white;
   color: black;
   text-decoration: none;
-  border: 1px solid rgba(119, 193, 151, 0.6);
+  border: 1px solid rgba(32,64,81);
   font-family: "Lato";
   font-size: 2em;
   text-align: center;
   text-decoration: none;
   padding: 10px 50px;
   margin: 20px;
-  box-shadow: 5px 5px 0 rgba(119, 193, 151, 0.6);
+  box-shadow: 5px 5px 0 rgba(132,169,172);
 }
 
 .input-button:hover,
 .input-button:active,
 .input-button:focus {
-  color: #77c197;
+  color:  rgba(132,169,172);
   background-color: white;
   box-shadow: 5px 5px 0 white;
 }
 
-
-
-
 /* search results*/
 
-
-
 .titlerecomendations {
-  font-size: 2rem;
   font-weight: 600;
-  width:100%;
-  border: 2px solid blue;
-
+  color: rgba(32,64,81);
+  padding: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  
 }
+
 .results {
-  margin-top: 10px 0px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.resultsbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .book1 {
-
-  padding:10px ;
-  width: 100%;
+  width: 90%;
+  margin: 10px;
+  padding:10px;
+  background-color: rgba(132,169,172,.4);
   display: flex;
   flex-direction: row;
-  margin: 10px 0px;
-  background-color: rgba(119, 193, 151, 0.2);
-
-}
+    }
 
 .book1 img {
   width: 120px;
-
 }
 
 .info{
@@ -472,7 +478,7 @@ a:hover {
   font-size: 5rem;
   font-weight: 600;
   margin: 2rem;
-  background-color: rgba(119, 193, 151, 0.6);
+  background-color: rgba(32,64,81,.6);
   margin: 2rem;
   padding: 2rem;
 }
@@ -489,14 +495,14 @@ a:hover {
 .question3,
 .question5 {
   padding: 1rem;
-  border: 2px solid rgba(119, 193, 151, 0.2);
+  border: 2px solid #84a9ac;
   margin: 0.5rem 0.5rem;
 }
 
 .question2,
 .question4,
 .question6 {
-  border: 2px solid rgba(119, 193, 151, 0.6);
+  border: 2px solid #e7dfd5;
   padding: 1rem;
   margin: 0.5rem 0.5rem;
 }
@@ -514,7 +520,7 @@ a:hover {
 
 /*footer*/
 footer {
-  background-color: #77c197;
+  background-color:rgba(32,64,81);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -627,16 +633,16 @@ footer p {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0.375rem 0.75rem;
-  border: 2px solid #77c197;
+  border: 2px solid #204051;
   background-color: white;
-  color: #77c197;
+  color: #204051;
 }
 
 .sign-button:hover,
 .sign-button:active,
 .sign-button:focus {
   color: #fff;
-  background-color: #77c197;
+  background-color: #204051;
 }
 
 .signup-form>input {
@@ -644,8 +650,8 @@ footer p {
 }
 
 /*MEDIA QUERIS*/
-/*navbar es plega a 952px*/
-@media (max-width: 952px) {
+/*navbar es plega a 992px cap abaix*/
+@media (max-width: 992px) {
   .checkbtn {
     display: block;
   }
@@ -654,11 +660,13 @@ footer p {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #78c197;
+    background: #84a9ac;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    
+
   }
 
   nav ul li {
@@ -682,7 +690,99 @@ footer p {
   }
 }
 
-@media (min-width: 950px) {
+
+
+/* tablets */
+@media (min-width: 768px) {
+
+/*inicio whatiread */
+  .allsearchbar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+  
+  .searchbar {
+    font-size: 1rem;
+    width: 500px;
+     
+  }
+
+  .searchbar-container {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .buttons-search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-button {
+    width: 300px;
+  }
+
+
+.searchbar-container h3{
+  width: 70%;
+}
+
+
+ .results{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+  .resultsbook{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  
+} 
+.book1{
+width: 350px;
+}
+
+/*fin whatiread */
+
+
+/* home */
+
+.section2-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+ 
+}
+
+.whoweare, .whatweoffer, .joinyourexp {
+  margin: 10px;
+  width: 30%;
+  background-color: #e7dfd5;
+ 
+}
+
+
+
+
+}
+
+/* escritorio */
+@media (min-width: 992px) {
   .container-section2 {
     display: flex;
     flex-direction: row;
@@ -695,4 +795,44 @@ footer p {
   .yellowbooksimg {
     background-size: cover;
   }
+
+
+/*inicio whatiread */
+
+.searchbar-container h3{
+  width: 40%;
+  }
+
+.buttons-search {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+.input-button {
+  width: 300px;
+}
+}
+
+.results{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.resultsbook{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+
+} 
+.book1{
+width: 450px;
+}
+
+
+
