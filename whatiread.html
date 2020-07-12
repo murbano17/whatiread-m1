@@ -30,45 +30,59 @@
         </nav>
 
     </header>
+
     <main>
 
-
-        <div>
+        <div class="searchbar-container">
+            <h1> Discover books you'll love!</h1>
+            <h3> Enter which type of book do you want to read and we will provide book recomendations and
+                suggestions for what to read next. </h3>
             <div class="allsearchbar">
-                <img class="glass" src="img/magnifying-glass.png" alt="" />
                 <form action="" method="get">
+                    
                     <input class="searchbar" class="form" type="text" name="search" id="search" placeholder="Search">
-                    <Button class="search-button" for="search">Search</Button>
+                    <!-- <Button class="search-button" for="search">Search</Button> -->
                 </form>
+            </div>
+
+        </div>
+
+        <section class="popular-subjects">
+            <div class="buttons-search">
+                <button class="input-button" for="search">Romance</Button>
+                <button class="input-button" for="search">Sciencie Fiction</Button>
+                <button class="input-button" for="search">Adventure Stories</Button>
+                <button class="input-button" for="search">Fantasy</Button>
+                <button class="input-button" for="search">History</Button>
+
             </div>
 
 
 
+        </section>
 
-            <section class="popular-subjects">
-                <div class="buttons-search">
-                    <button class="search-button" for="search">Romance</Button>
-                    <button class="search-button" for="search">Sciencie Fiction</Button>
-                    <button class="search-button" for="search">Adventure Stories</Button>
-                    <button class="search-button" for="search">Fantasy</Button>
-                    <button class="search-button" for="search">History</Button>
+        <div class="titlerecomendations">
+            <h1>Our recomendations are:</h1>
+        </div>
+        <section class="results">
 
-                </div>
-
-            </section>
-            <section class="results">
-                <div class="book1">
-                    <figure><img src="img/dan-brown-origin.jpg" alt=""></figure>
-                    <h4 class="Title">Origin</h4>
-                    <h3>Author:</h3>
+            <div class="book1">
+                <figure><img src="img/dan-brown-origin.jpg" alt=""></figure>
+                <div class="info">
+                    <h3 class="Title">Origin</h3>
+                    <h4>Author:</h4>
                     <p> Dan Brown</p>
-                    <h3>Sinopsis</h3>
+                    <h4>Sinopsis:</h4>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ab repellat ad consequatur
                         quos
                         odit magnam in libero ipsam modi quis dolores, iusto maiores laboriosam beatae. Ex officiis rem
                         excepturi.</p>
                 </div>
-            </section>
+            </div>
+
+
+
+        </section>
 
     </main>
 

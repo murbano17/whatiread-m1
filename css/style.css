@@ -228,6 +228,8 @@ a:hover {
   background-color: rgba(119, 193, 151, 0.6);
   margin: 2rem;
   padding: 2rem;
+  /*transform: skew(-5deg, 0deg);*/
+
 }
 
 /*button home/section1*/
@@ -294,6 +296,167 @@ a:hover {
   padding: 4rem;
 }
 
+/* What I read - buttons*/
+
+/*search bar*/
+
+
+
+.searchbar-container {
+  background: url(../img/book-coffee.jpg) no-repeat center center / cover;
+  width: 100%;
+  height: 65vh;
+}
+
+.searchbar-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 2rem;
+  
+}
+
+.allsearchbar{
+  padding: 20px;
+  
+  }
+
+.searchbar-container h3{
+  margin: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(119, 193, 151, 0.6);
+
+}
+.searchbar {
+  font-size: 1rem;
+  width: 100%;
+  font-family: "Lato";
+  background-color: rgba(255, 255, 255);
+  border: 2px solid rgba(119, 193, 151, 0.6);
+  height: 3rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 0 rgba(119, 193, 151, 0.6);
+
+}
+
+.search-button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: none;
+  font-family: "Lato";
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin: 30px;
+  
+}
+
+.search-button:hover,
+.search-button:active,
+.search-button:focus {
+  color: white;
+  background-color: #77c197;
+}
+
+
+.buttons-search {
+  width: 100%;
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input-button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 1px solid rgba(119, 193, 151, 0.6);
+  font-family: "Lato";
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin: 20px;
+  box-shadow: 5px 5px 0 rgba(119, 193, 151, 0.6);
+}
+
+.input-button:hover,
+.input-button:active,
+.input-button:focus {
+  color: #77c197;
+  background-color: white;
+  box-shadow: 5px 5px 0 white;
+}
+
+
+
+
+/* search results*/
+
+
+
+.titlerecomendations {
+  font-size: 2rem;
+  font-weight: 600;
+  width:100%;
+  border: 2px solid blue;
+
+}
+.results {
+  margin-top: 10px 0px;
+  width: 100%;
+}
+
+.book1 {
+
+  padding:10px ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  background-color: rgba(119, 193, 151, 0.2);
+
+}
+
+.book1 img {
+  width: 120px;
+
+}
+
+.info{
+  padding-left: 10px;
+}
+
+.info h3 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 2rem;
+
+}
+
+.info h4 {
+  font-size: 2em;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.info p {
+  font-size: 1rem;
+}
+
+
+
+
+
+
 /*faQ*/
 .img-header-faq {
   background: url(../img/book-coffee.jpg) no-repeat center center / cover;
@@ -326,14 +489,14 @@ a:hover {
 .question3,
 .question5 {
   padding: 1rem;
-  border: 4px solid rgba(119, 193, 151, 0.2);
+  border: 2px solid rgba(119, 193, 151, 0.2);
   margin: 0.5rem 0.5rem;
 }
 
 .question2,
 .question4,
 .question6 {
-  border: 4px solid rgba(119, 193, 151, 0.6);
+  border: 2px solid rgba(119, 193, 151, 0.6);
   padding: 1rem;
   margin: 0.5rem 0.5rem;
 }
@@ -348,55 +511,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-/* What I read - buttons*/
-
-
-
-.search-button {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border: 1px solid rgba(119, 193, 151, 0.6);
-  font-family: "Lato";
-  font-size: 2em;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 50px;
-  margin: 30px;
-  box-shadow: 5px 5px 0 rgba(119, 193, 151, 0.6);
-}
-
-.search-button:hover,
-.search-button:active,
-.search-button:focus {
-  color: #77c197;
-  background-color: white;
-  box-shadow: 5px 5px 0 white;
-}
-
-.allsearchbar {
-  background: url(../img/book-coffee.jpg) no-repeat center center / cover;
-
-}
-
-
-.buttons-search {
-  width: 100%;
-  border: 3px solid black;
-}
-
-.results {
-  border: 3px solid yellow;
-}
-
-.book1 {
-  background-color: rgba(119, 193, 151, 0.2);
-}
-
-.book1 img {
-  width: 150px;
-
-}
 
 /*footer*/
 footer {
