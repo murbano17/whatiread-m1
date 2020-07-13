@@ -397,72 +397,129 @@ a:hover {
 
 /* search results*/
 
-.titlerecomendations {
-  font-weight: 600;
-  color: rgba(32, 64, 81);
-  padding: 20px;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Josefin Sans';
-
-}
-
-.results {
-  margin-top: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.resultsbook {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.book1 {
-  width: 90%;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgba(132, 169, 172, .4);
+.books-list article {
+  /*   border: 3px solid red;
+ */
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(231, 233, 213);
+  margin: 10px;
+  padding: 10px;
+
 }
 
-.book1 img {
-  width: 120px;
+.coverbook {
+  padding: 5px;
+  height: 100%;
+  background-color: white;
 }
 
-.info {
-  padding-left: 10px;
+.infobook {
+  /*   border: 3px solid yellow;
+ */
+  height: 100%;
+  margin: 0px 10px;
 }
 
-.info h3 {
-  font-size: 3em;
+.books-list h3 {
+  font-size: 2.5em;
+  color: #204051;
   font-weight: 600;
-  line-height: 2rem;
+  text-align: left;
 
 }
 
-.info h4 {
+.books-list h4 {
+  margin-top: 5px;
   font-size: 2em;
-  line-height: 2rem;
+  font-weight: 600;
+  text-align: left;
+
+}
+
+.books-list p {
+  margin-top: 5px;
+  font-size: 1.8em;
+  text-align: left;
+}
+
+/* popUp*/
+
+
+.sinopsis-button {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.37rem 0.75rem;
+  border: 2px solid rgb(132, 169, 172);
+  background-color: rgb(132, 169, 172);
+  color: white;
+}
+
+.sinopsis-button:hover,
+.sinopsis-button:active,
+.sinopsis-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  width: 90%;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  padding: 10px;
+}
+
+.popup h2 {
+  font-size: 3em;
+  margin-top: 10px;
+  color: #204051;
+  font-weight: 600;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
+  color: #204051;
 }
 
-.info p {
-  font-size: 1rem;
+.popup .close:hover {
+  color: #e7d7d5;
 }
 
+.popup .content {
+  overflow: auto;
+}
 
-
-
+.popup p {
+  font-size: 2em;
+}
 
 
 /*faQ*/
@@ -626,6 +683,7 @@ footer p {
 }
 
 .message-container p.correct-message {
+  color: black;
   background-color: rgb(47, 164, 93);
   box-shadow: 0 0 10px #dbf1c1;
 }
@@ -650,6 +708,7 @@ footer p {
 .signup-form>input {
   border: 0;
 }
+
 
 
 
@@ -694,6 +753,9 @@ footer p {
     left: 0;
   }
 }
+
+
+
 
 
 
