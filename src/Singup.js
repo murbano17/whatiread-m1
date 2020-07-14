@@ -104,11 +104,17 @@ class Signup {
       return;
     }
 
+
     const successMessageP = document.createElement("p");
-    successMessageP.innerHTML = "Count done";
+    successMessageP.innerHTML = "Account done";
+    successMessageP.classList.add("accountdone-message");
 
     this.errorsWrapper.appendChild(successMessageP);
   };
+
+
+
+
 
   removeMessages = () => {
     setTimeout(() => {

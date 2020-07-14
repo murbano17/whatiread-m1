@@ -154,6 +154,7 @@ nav {
   background: white;
   height: 80px;
   width: 100%;
+
 }
 
 img.logo {
@@ -197,6 +198,7 @@ a:hover {
 
 #check {
   display: none;
+
 }
 
 /* home/section1*/
@@ -397,6 +399,18 @@ a:hover {
 
 /* search results*/
 
+.titlerecomendations {
+  font-weight: 600;
+  color: rgba(32, 64, 81);
+  padding-left: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  text-align: center;
+
+}
+
+
 .books-list article {
   /*   border: 3px solid red;
  */
@@ -407,18 +421,17 @@ a:hover {
   background-color: rgba(231, 233, 213);
   margin: 10px;
   padding: 10px;
+  border-radius: 1em;
 
 }
 
 .coverbook {
   padding: 5px;
-  height: 100%;
   background-color: white;
 }
 
 .infobook {
-  /*   border: 3px solid yellow;
- */
+  /*   border: 3px solid yellow; */
   height: 100%;
   margin: 0px 10px;
 }
@@ -445,6 +458,12 @@ a:hover {
   text-align: left;
 }
 
+
+#results {
+  transition: all 5s ease-in-out;
+
+}
+
 /* popUp*/
 
 
@@ -452,17 +471,16 @@ a:hover {
   margin-top: 10px;
   font-size: 1.3rem;
   text-transform: uppercase;
-  padding: 0.37rem 0.75rem;
-  border: 2px solid rgb(132, 169, 172);
-  background-color: rgb(132, 169, 172);
-  color: white;
+  color: rgb(132, 169, 172);
+  border: none;
+  background-color: rgba(231, 233, 213);
 }
 
 .sinopsis-button:hover,
 .sinopsis-button:active,
 .sinopsis-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(32, 64, 81);
+
 }
 
 .overlay {
@@ -471,7 +489,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(132, 169, 172, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
@@ -483,13 +501,14 @@ a:hover {
 }
 
 .popup {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 50px auto;
-  background: #fff;
+  background: white;
   border-radius: 5px;
-  position: relative;
   transition: all 5s ease-in-out;
-  padding: 10px;
+  padding: 10%;
 }
 
 .popup h2 {
@@ -518,7 +537,9 @@ a:hover {
 }
 
 .popup p {
-  font-size: 2em;
+  font-size: 1.7em;
+  font-synthesis: 1em;
+
 }
 
 
@@ -580,38 +601,45 @@ a:hover {
 /*footer*/
 footer {
   background-color: rgba(32, 64, 81);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
   width: 100%;
   height: 12vh;
 }
 
-footer div {
+
+.footermenu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(59, 105, 120);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.footermenu ul {
+  background-color: rgb(59, 105, 120);
+  width: 100%;
+  color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-footer img {
-  width: 150px;
-  padding: 0.4em;
-}
-
-footer h3 {
-  font-size: 3em;
-  text-transform: uppercase;
+.footermenu ul li {
+  background-color: rgb(59, 105, 120);
   color: white;
-  padding: 0.4em;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+
 }
 
-footer p {
-  font-size: 1.8em;
-  text-align: center;
-  color: white;
-}
 
 /*singup and singin!*/
 
@@ -628,10 +656,12 @@ footer p {
   background-color: white;
   border: 3px solid white;
   border-radius: 1.9rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem;
+  border: 2px solid blue;
 }
 
 .logoForm {
@@ -646,7 +676,7 @@ footer p {
 }
 
 .form-wrapper p {
-  font-size: 1.8em;
+  font-size: 1rem;
   text-align: left;
   margin: 5px 0px;
 }
@@ -670,22 +700,19 @@ footer p {
 
 .message-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
+  color: red;
 }
 
-.message-container p {
-  background-color: var(--red-color);
-  padding: 20px;
-  margin: 10px 0;
-  color: black;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #feb1b1;
-}
 
 .message-container p.correct-message {
   color: black;
   background-color: rgb(47, 164, 93);
   box-shadow: 0 0 10px #dbf1c1;
+}
+
+.accountdone-message {
+  color: rgb(47, 164, 93);
 }
 
 .sign-button {
@@ -705,11 +732,29 @@ footer p {
   background-color: #204051;
 }
 
-.signup-form>input {
-  border: 0;
+
+
+
+/*Animaciones css faQ*/
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
 
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+  }
+}
 
 
 
@@ -721,17 +766,20 @@ footer p {
   }
 
   ul {
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #84a9ac;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-
+    z-index: 2;
 
   }
+
 
   nav ul li {
     display: block;
@@ -752,7 +800,12 @@ footer p {
   #check:checked~ul {
     left: 0;
   }
+
+
+
+
 }
+
 
 
 
@@ -803,6 +856,25 @@ footer p {
     width: 70%;
   }
 
+  /*results*/
+  .resultsbook {
+    /* border: 3px solid red; */
+  }
+
+  .books-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+  }
+
+  .books-list article {
+
+    border: 2px solid rgb(231, 233, 213);
+    border-radius: 1em;
+    width: 45%;
+  }
 
 
 
@@ -829,6 +901,127 @@ footer p {
 
   }
 
+  /*sign up and log in */
+
+  .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .form-wrapper {
+    padding: 20px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 1.9rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border: 2px solid blue;
+  }
+
+  .logoForm {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .form-wrapper p {
+    font-size: 1rem;
+    text-align: left;
+    margin: 5px 0px;
+  }
+
+  .form-wrapper>form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-wrapper>form>input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: #a5a5a5;
+    font-size: 1.5em;
+  }
+
+  .message-container {
+    width: 100%;
+    max-width: 500px;
+    color: red;
+  }
+
+
+  .message-container p.correct-message {
+    color: black;
+    background-color: rgb(47, 164, 93);
+    box-shadow: 0 0 10px #dbf1c1;
+  }
+
+  .accountdone-message {
+    color: rgb(47, 164, 93);
+  }
+
+  .sign-button {
+    margin: 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.375rem 0.75rem;
+    border: 2px solid #204051;
+    background-color: white;
+    color: #204051;
+  }
+
+  .sign-button:hover,
+  .sign-button:active,
+  .sign-button:focus {
+    color: #fff;
+    background-color: #204051;
+  }
+
+
+  .footermenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .footermenu ul {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footermenu ul li {
+    background-color: rgb(59, 105, 120);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
 
 
 
@@ -851,6 +1044,12 @@ footer p {
 
 
   /*inicio whatiread */
+
+  .searchbar-container {
+    height: 50vh;
+
+
+  }
 
   .searchbar-container h3 {
     width: 40%;

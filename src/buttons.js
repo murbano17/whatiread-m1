@@ -55,10 +55,15 @@ scienceButton.addEventListener('click', () => getBooks("science"));
 const travelButton = document.querySelector('.travel')
 travelButton.addEventListener('click', () => getBooks("travel"));
 
+
+
 /* 
 //searchbar
-const searchButton = document.querySelector('.search')
-const searchInput = document.querySelector()
-searchButton.addEventListener('click')
+const searchButton = document.querySelector('.searchbook');
+const inputValue = document.querySelector('.searchbooksbar').value;
 
-digo al nombre de la variable */
+inputValue.addEventListener('click', () => getBooksbyAuthor(inputValue))
+ */
+/* 
+<input class="searchbooksbar" type="search" name="searchbyauthorortitle" id="search-bar" placeholder="Search">
+<button class="searchbook" for="search">Search</button> */

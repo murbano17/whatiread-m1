@@ -1,10 +1,11 @@
 'use strict'
 /* fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:travel`) */
-function getBooks(category) {
+function getBooksbyAuthor(authors) {
 
     const section = document.querySelector(".books-list");
 
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${category}`)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${authors}`)
+
         .then((response) => {
 
             return response.json()
@@ -13,20 +14,11 @@ function getBooks(category) {
         .then((data) => {
             console.log(data);
             section.innerHTML = "";
-            //crear título recomendaciones
-          /*   const title = document.createElement('h4');
-            title.innerHTML = `
-
-            <h4>Our recomendations are: <h4>
-            `
-            section.appendChild(h4);
-
- */
-
             data.items.forEach((bookObj) => {
                 const article = document.createElement('article');
                 article.innerHTML = `
-            
+                
+            </div>
                 <div class="coverbook">
                     <img src="${bookObj.volumeInfo.imageLinks.thumbnail}" alt="${bookObj.volumeInfo.title}"/>
                     </div>
@@ -59,4 +51,4 @@ function getBooks(category) {
         .catch((err) => {})
 }
 
-getBooks();
+getBooksbyAuthor();
