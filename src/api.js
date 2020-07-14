@@ -14,7 +14,7 @@ function getBooks(category) {
             console.log(data);
             section.innerHTML = "";
             //crear título recomendaciones
-          /*   const title = document.createElement('h4');
+            /*   const title = document.createElement('h4');
             title.innerHTML = `
 
             <h4>Our recomendations are: <h4>
