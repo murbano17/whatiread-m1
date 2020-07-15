@@ -40,11 +40,22 @@
             <h1> Discover books you'll love!</h1>
             <h3> Enter which type of book do you want to read and we will provide book recomendations and
                 suggestions for what to read next. </h3>
-            <div class="allsearchbar">
-                <form action="" method="get">
 
-                    <input class="searchbar" class="form" type="text" name="search" id="search" placeholder="Search">
-                    <button class="search-button search" for="search">Search</button>
+
+
+            <div>
+                <input type="radio" id="book-author" name="selectsearch" value="author-book" checked>
+                <label for="author">Author</label>
+            </div>
+            <div>
+                <input type="radio" id="book-title" name="selectsearch" value="title-book">
+                <label for="title">Title</label>
+            </div>
+
+            <div class="allsearchbar">
+                <form>
+                    <input type='text' id='formulario' class='searchbar' placeholder="Search your book">
+                    <a href=#results><button id="buttonsearch">Buscar</button></a>
                 </form>
             </div>
 
@@ -113,6 +124,8 @@
 
     <script src="src/api.js"></script>
     <script src="src/buttons.js"></script>
+    <script src="src/searchbarbyauthor.js"></script>
+    <!--    <script src="src/searchbarbytitle.js"></script> -->
 
 </body>
 

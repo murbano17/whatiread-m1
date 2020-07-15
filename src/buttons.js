@@ -54,16 +54,3 @@ scienceButton.addEventListener('click', () => getBooks("science"));
 //travel
 const travelButton = document.querySelector('.travel')
 travelButton.addEventListener('click', () => getBooks("travel"));
-
-
-
-/* 
-//searchbar
-const searchButton = document.querySelector('.searchbook');
-const inputValue = document.querySelector('.searchbooksbar').value;
-
-inputValue.addEventListener('click', () => getBooksbyAuthor(inputValue))
- */
-/* 
-<input class="searchbooksbar" type="search" name="searchbyauthorortitle" id="search-bar" placeholder="Search">
-<button class="searchbook" for="search">Search</button> */

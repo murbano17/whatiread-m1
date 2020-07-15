@@ -658,26 +658,22 @@ footer p {
   transition: 0.5s;
 }
 
-
-
-
-
 /*singup and singin!*/
 
 .container-form {
+  background: url(../img/background-books.jpg) no-repeat center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100%;
-  background-image: url(/img/background-books.jpg);
+  height: 100vh;
 
 }
 
 .form-wrapper {
   background-color: white;
   border: 3px solid white;
-  border-radius: 1.9rem;
+  border-radius: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -874,7 +870,7 @@ footer p {
 
   }
 
-  /*results*/
+  /* whatiread-results*/
 
   .books-list {
     display: flex;
@@ -921,7 +917,6 @@ footer p {
 
   }
 
-
   /*fin whatiread */
 
 
@@ -948,6 +943,7 @@ footer p {
   /*sign up and log in */
 
   .container-form {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -966,7 +962,6 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(59, 105, 120);
     width: 100%;
     height: 50px;
     display: flex;
@@ -981,12 +976,6 @@ footer p {
     margin: 15px;
 
   }
-
-
-
-
-
-
 
 }
 

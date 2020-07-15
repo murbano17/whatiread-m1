@@ -1,15 +1,20 @@
 'use strict'
 /* fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:travel`) */
-function getBooksbyAuthor(authors) {
+
+
+const formulario = document.querySelector('#formulario').value;
+const buttonSearchBar = document.querySelector('#buttonsearch');
+buttonSearchBar.onclick = getBooksByAuthor;
+
+function getBooksByAuthor() {
+    console.log('hola!')
+    console.log(formulario)
 
     const section = document.querySelector(".books-list");
 
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${authors}`)
-
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${formulario.toLowerCase()}`)
         .then((response) => {
-
             return response.json()
-
         })
         .then((data) => {
             console.log(data);
@@ -50,5 +55,3 @@ function getBooksbyAuthor(authors) {
         })
         .catch((err) => {})
 }
-
-getBooksbyAuthor();
