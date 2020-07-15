@@ -43,19 +43,15 @@
 
 
 
-            <div>
-                <input type="radio" id="book-author" name="selectsearch" value="author-book" checked>
-                <label for="author">Author</label>
-            </div>
-            <div>
-                <input type="radio" id="book-title" name="selectsearch" value="title-book">
-                <label for="title">Title</label>
-            </div>
+            <form name=optionssearch>
+                <input type="Radio" name="option" checked> Author
+                <input type="Radio" name="option"> Title
+            </form>
 
             <div class="allsearchbar">
                 <form>
                     <input type='text' id='formulario' class='searchbar' placeholder="Search your book">
-                    <a href=#results><button id="buttonsearch">Buscar</button></a>
+                    <button id="buttonsearch">Buscar</button>
                 </form>
             </div>
 
@@ -125,7 +121,6 @@
     <script src="src/api.js"></script>
     <script src="src/buttons.js"></script>
     <script src="src/searchbarbyauthor.js"></script>
-    <!--    <script src="src/searchbarbytitle.js"></script> -->
 
 </body>
 

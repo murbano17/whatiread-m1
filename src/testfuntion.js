@@ -1,24 +1,24 @@
 'use strict'
 /* fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:travel`) */
 
-/* function changeSearch() {
+function changeSearch(formulario) {
+    let optionCheck = document.querySelector('')
     for (i = 0; i < document.optionssearch.option.length; i++) {
         if (document.optionssearch.option[0].checked) {
-            getBooksByAuthor()
-            break;
+            getBooksByAuthor(formulario)
         } else {
-            getBooksByTitle()
+            getBooksByTitle(formulario)
         }
 
     }
 }
- */
+
 
 
 const buttonSearchBar = document.querySelector('#buttonsearch');
 buttonSearchBar.addEventListener('click', () => {
     const formulario = document.querySelector('#formulario').value;
-    getBooksByAuthor(formulario)
+    changeSearch(formulario);
 });
 
 function getBooksByAuthor(formulario) {
