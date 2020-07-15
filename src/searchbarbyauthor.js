@@ -18,7 +18,7 @@
 const buttonSearchBar = document.querySelector('#buttonsearch');
 buttonSearchBar.addEventListener('click', () => {
     const formulario = document.querySelector('#formulario').value;
-    getBooksByAuthor(formulario)
+    getBooksByAuthor
 });
 
 function getBooksByAuthor(formulario) {
