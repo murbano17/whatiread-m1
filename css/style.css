@@ -300,8 +300,8 @@ img.logo {
 
 .searchbar-container {
   background: url(../img/book-coffee.jpg) no-repeat center center / cover;
+  height: 80vh;
   width: 100%;
-
 }
 
 .searchbar-container h1 {
@@ -311,45 +311,24 @@ img.logo {
   font-weight: 600;
   width: 100%;
   padding-top: 4rem;
-  padding-bottom: 2rem;
   color: rgba(32, 64, 81);
-
 
 }
 
 .searchbar-container h3 {
-  margin: .5rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
   padding: 1rem;
   color: white;
   background-color: rgba(32, 64, 81, .7);
-
-}
-
-
-.allsearchbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: .5rem;
-}
-
-.container-searchbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-
 }
 
 .container-radiobutton {
-  margin: .5rem;
+  margin: 2rem;
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -361,11 +340,20 @@ img.logo {
 .radio-name {
   color: white;
   font-size: 1.1rem;
-  margin: 5px;
+  margin: .5rem;
+}
+
+.allsearchbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .searchbar {
-  margin: .5rem;
+  margin-top: 2rem;
   font-size: .7rem;
   padding: 5px;
   width: 13rem;
@@ -398,15 +386,8 @@ img.logo {
 
 /* Popular subjects */
 
-.buttons-search {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
 .popular-subjects {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -429,6 +410,18 @@ img.logo {
   color: rgba(59, 105, 120);
 
 }
+
+.buttons-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
 
 .input-button {
   width: 300px;
@@ -487,19 +480,19 @@ img.logo {
 
 }
 
-.title-recomends{
+.title-recomends {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:1rem;
+  padding: 1rem;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: 'Josefin Sans';
   color: #204051;
- 
+
 }
 
 .books-list p {
@@ -873,23 +866,13 @@ footer p {
 @media (min-width: 576px) {
 
   /*inicio whatiread */
-  .allsearchbar {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
 
   .searchbar {
-    font-size: 1rem;
+    font-size: .8rem;
     width: 400px;
-
   }
 
   .searchbar-container {
-    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -967,21 +950,7 @@ footer p {
 
   /* home */
 
-  .section2-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
 
-  }
-
-  .whoweare,
-  .whatweoffer,
-  .joinyourexp {
-    background-color: #e7dfd5;
-
-  }
 
   /*sign up and log in */
 
@@ -1024,25 +993,25 @@ footer p {
 
 /* escritorio */
 @media (min-width: 992px) {
-  .container-section2 {
+
+  .section2-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
   }
 
-  .text-section2 {
-    width: 100%;
-  }
+  .whoweare,
+  .whatweoffer,
+  .joinyourexp {
+    margin: 0;
+    max-width: 33%;
 
-  .yellowbooksimg {
-    background-size: cover;
   }
 
   /*inicio whatiread */
-
-  .searchbar-container {
-    height: 60vh;
-
-  }
 
   .searchbar-container h3 {
     width: 40%;
