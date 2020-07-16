@@ -579,7 +579,7 @@ img.logo {
 
 /*faQ*/
 .img-header-faq {
-  background: url(../img/book-coffee.jpg) no-repeat center center / cover;
+  background: url(../img/book-library.jpg) no-repeat center center / cover;
   height: 40vh;
   display: flex;
   justify-content: flex-end;
@@ -740,15 +740,11 @@ footer p {
   margin: 5px 0px;
 }
 
-.form-wrapper>form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  width: 100%;
-}
+
 
 .form-wrapper>form>input {
   margin-bottom: 10px;
+  height: 30px;
   width: 100%;
 }
 
@@ -868,7 +864,7 @@ footer p {
   /*inicio whatiread */
 
   .searchbar {
-    font-size: .8rem;
+    font-size: 1rem;
     width: 400px;
   }
 
@@ -897,6 +893,11 @@ footer p {
 
   .input-button {
     max-width: 300px;
+
+  }
+
+  .button-search-bar {
+    font-size: 1rem;
 
   }
 
