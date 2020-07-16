@@ -150,7 +150,7 @@ body {
 }
 
 /* navbar */
-.navbar {
+.navbar2 {
   background: white;
   height: 80px;
   width: 100%;
@@ -162,26 +162,26 @@ img.logo {
   height: 80px;
 }
 
-.navbar ul {
+.navbar2 ul {
   float: right;
   margin-right: 20px;
 }
 
-.navbar ul li {
+.navbar2 ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-.navbar ul li a {
+.navbar2 ul li a {
   color: black;
   font-size: 1.2rem;
   padding: 7px 13px;
   text-transform: uppercase;
 }
 
-.navbar a.active,
-.navbar a:hover {
+.navbar2 a.active,
+.navbar2 a:hover {
   color: rgb(132, 169, 172);
   transition: 0.5s;
 }
@@ -301,8 +301,7 @@ img.logo {
 .searchbar-container {
   background: url(../img/book-coffee.jpg) no-repeat center center / cover;
   width: 100%;
-  height: 75vh;
- 
+
 }
 
 .searchbar-container h1 {
@@ -332,36 +331,70 @@ img.logo {
 
 .allsearchbar {
   width: 100%;
-  border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+}
+
+.container-searchbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+}
+
+.container-radiobutton {
+  margin: .5rem;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(132, 169, 172, .7);
+}
+
+.radio-name {
+  color: white;
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+.searchbar {
+  margin: .5rem;
+  font-size: .7rem;
+  padding: 5px;
+  width: 13rem;
+  font-family: "Lato";
+  background-color: rgba(255, 255, 255);
+  border: 2px solid rgba(32, 64, 81);
+  height: 3rem;
+  box-shadow: 3px 3px 0 rgba(32, 64, 81);
+
 }
 
 .button-search-bar {
   font-size: .7rem;
-  width: 60px%;
+  width: 70px;
   font-family: "Lato";
-  background-color: rgba(255, 255, 255);
+  color: white;
+  background-color: rgba(132, 169, 172);
   border: 2px solid rgba(32, 64, 81);
   height: 3rem;
-  padding: 1rem;
   box-shadow: 3px 3px 0 rgba(32, 64, 81);
 }
 
-.searchbar {
-  font-size: .7rem;
-  width: 100%;
-  font-family: "Lato";
-  background-color: rgba(255, 255, 255);
-  border: 2px solid rgba(32, 64, 81);
-  height: 3rem;
-  padding: 1rem;
-  box-shadow: 3px 3px 0 rgba(32, 64, 81);
-
-
+.button-search-bar:hover,
+.button-search-bar:active,
+.button-search-bar:focus {
+  color: rgba(132, 169, 172);
+  background-color: white;
 }
+
 
 /* Popular subjects */
 
@@ -377,7 +410,8 @@ img.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1rem;
+  background-color: #e7dfd5;
 }
 
 .popular-subjects h2 {
@@ -388,6 +422,11 @@ img.logo {
   text-transform: uppercase;
   font-family: 'Josefin Sans';
   text-align: center;
+}
+
+.popular-subjects h2:hover {
+  font-weight: 600;
+  color: rgba(59, 105, 120);
 
 }
 
@@ -402,7 +441,7 @@ img.logo {
   text-align: center;
   text-decoration: none;
   padding: 10px 50px;
-  margin: 20px;
+  margin: 17px;
   box-shadow: 5px 5px 0 rgba(132, 169, 172);
 }
 
@@ -414,19 +453,8 @@ img.logo {
   box-shadow: 5px 5px 0 white;
 }
 
+
 /* search results*/
-
-.titlerecomendations {
-  font-weight: 600;
-  color: rgba(32, 64, 81);
-  padding-left: 20px;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-family: 'Josefin Sans';
-  text-align: center;
-
-}
-
 
 .books-list article {
   display: flex;
@@ -459,13 +487,19 @@ img.logo {
 
 }
 
-.books-list h4 {
-  width: 100%;
-  margin-top: 5px;
-  font-size: 2em;
+.title-recomends{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+  text-align: center;
+  font-size: 2rem;
   font-weight: 600;
-  text-align: left;
-
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  color: #204051;
+ 
 }
 
 .books-list p {
@@ -478,11 +512,9 @@ img.logo {
 
 #results {
   transition: all 5s ease-in-out;
-
 }
 
 /* popUp*/
-
 
 .sinopsis-button {
   margin-top: 10px;
@@ -799,7 +831,7 @@ footer p {
     display: block;
   }
 
-  .navbar ul {
+  .navbar2 ul {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -814,18 +846,18 @@ footer p {
 
   }
 
-  .navbar ul li {
+  .navbar2 ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
 
-  .navbar ul li a {
+  .navbar2 ul li a {
     font-size: 20px;
   }
 
-  .navbar a.active,
-  .navbar a:hover {
+  .navbar2 a.active,
+  .navbar2 a:hover {
     background: none;
     color: white;
     transition: .5s;
@@ -894,9 +926,8 @@ footer p {
     justify-content: center;
     align-items: center;
     background-color: rgba(212, 216, 218, 0.18);
-
-
   }
+
 
   .books-list article {
     width: 250px;
@@ -929,7 +960,6 @@ footer p {
 
   .sinopsis-button {
     font-size: 1rem;
-
   }
 
   /*fin whatiread */
