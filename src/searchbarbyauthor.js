@@ -1,28 +1,21 @@
 'use strict'
 /* fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:travel`) */
 
-/* function changeSearch() {
-    for (i = 0; i < document.optionssearch.option.length; i++) {
-        if (document.optionssearch.option[0].checked) {
-            getBooksByAuthor()
-            break;
-        } else {
-            getBooksByTitle()
-        }
 
-    }
-}
- */
+/* const buttonSearchBar = document.querySelector('#buttonsearch'); */
+const formulario = document.querySelector('#formulario-real')
+console.log(formulario)
 
-
-const buttonSearchBar = document.querySelector('#buttonsearch');
-buttonSearchBar.addEventListener('click', () => {
+formulario.addEventListener('submit', (event) => {
+    event.preventDefault();
     const formulario = document.querySelector('#formulario').value;
+    console.log(formulario);
     getBooksByAuthor(formulario);
 });
 
 function getBooksByAuthor(formulario) {
     console.log('hola!')
+    console.log(formulario)
 
     const section = document.querySelector(".books-list");
 
@@ -70,13 +63,23 @@ function getBooksByAuthor(formulario) {
         .catch((err) => {})
 }
 
-/* function getBooksByTitle() {
 
+
+/* 
+
+const buttonSearchBar = document.querySelector('#buttonsearch');
+buttonSearchBar.addEventListener('click', () => {
+    const formulario = document.querySelector('#formulario').value;
+    getBooksByTitle(formulario);
+});
+
+function getBooksByTitle(formulario) {
+    console.log('hola!')
     console.log(formulario)
 
     const section = document.querySelector(".books-list");
 
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=intitle:${formulario.toLowerCase()}`)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${formulario.toLowerCase()}`)
         .then((response) => {
             return response.json()
         })
@@ -118,4 +121,4 @@ function getBooksByAuthor(formulario) {
 
         })
         .catch((err) => {})
-} */
+ */
