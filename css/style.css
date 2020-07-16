@@ -701,13 +701,21 @@ footer p {
 
 /*singup and singin!*/
 
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .container-form {
   background: url(../img/background-books.jpg) no-repeat center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 
 }
 
@@ -735,7 +743,7 @@ footer p {
 }
 
 .form-wrapper p {
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: left;
   margin: 5px 0px;
 }
@@ -746,6 +754,7 @@ footer p {
   margin-bottom: 10px;
   height: 30px;
   width: 100%;
+  padding: 12px 0px;
 }
 
 ::placeholder {
@@ -761,9 +770,7 @@ footer p {
 
 
 .message-container p.correct-message {
-  color: black;
-  background-color: rgb(47, 164, 93);
-  box-shadow: 0 0 10px #dbf1c1;
+  color: rgb(47, 164, 93);
 }
 
 .accountdone-message {
@@ -778,6 +785,7 @@ footer p {
   border: 2px solid #204051;
   background-color: white;
   color: #204051;
+  align-self: center;
 }
 
 .sign-button:hover,
@@ -956,7 +964,6 @@ footer p {
   /*sign up and log in */
 
   .container-form {
-
     display: flex;
     justify-content: center;
     align-items: center;
