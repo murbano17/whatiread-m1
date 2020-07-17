@@ -371,6 +371,7 @@ img.logo {
   padding: 5px;
 }
 
+
 .button-search-bar {
   font-size: .7rem;
   width: 70px;
@@ -764,15 +765,15 @@ footer p {
 
 .form-wrapper>form>input {
   margin-bottom: 10px;
-  height: 40px;
+  height: 30px;
   width: 100%;
   padding: 12px 0px;
 }
 
 ::placeholder {
   color: #a5a5a5;
-  font-size: 1rem;
-  padding: 5px;
+  font-size: .9rem;
+  padding:5px;
 }
 
 .message-container {
