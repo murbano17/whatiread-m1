@@ -364,6 +364,13 @@ img.logo {
 
 }
 
+
+.searchbar::placeholder {
+  color: #a5a5a5;
+  font-size: 1rem;
+  padding: 5px;
+}
+
 .button-search-bar {
   font-size: .7rem;
   width: 70px;
@@ -417,10 +424,6 @@ img.logo {
   align-items: center;
 
 }
-
-
-
-
 
 .input-button {
   width: 300px;
@@ -761,14 +764,15 @@ footer p {
 
 .form-wrapper>form>input {
   margin-bottom: 10px;
-  height: 30px;
+  height: 40px;
   width: 100%;
   padding: 12px 0px;
 }
 
 ::placeholder {
   color: #a5a5a5;
-  font-size: 1.5em;
+  font-size: 1rem;
+  padding: 5px;
 }
 
 .message-container {

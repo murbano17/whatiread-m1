@@ -81,5 +81,5 @@ Google Books API
 
 URls for the project repo and deploy
 [Link Repo](https://github.com/murbano17/whatiread-m1)
-[Link Deploy](http://github.com)
+[Link Deploy](https://murbano17.github.io/whatiread-m1/)
 
