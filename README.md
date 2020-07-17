@@ -1,13 +1,13 @@
 ## What I read next?
 
-Te acabas un libro y no sabes qué libro empezar? ***What I read next?*** te da la solución. Busca qué estilo de libro te apetece leer y te proporcionará 4 títulos inspiradores.
+Te acabas un libro y no sabes qué libro empezar? ***What I read next?*** te da la solución. Busca tu libro por autor, libro o si lo prefieres, busca por temática y What I read? te sugerirá 10 títulos. 
 
 
 ## MVP
 
-**Homepage:** Bienvenida a la aplicación. Por qué usarnos?
+**Home:** Bienvenida a la aplicación. Por qué usarnos?
 
-**Books:** Buscador de libros según el estilo que me apetece leer
+**What I read?:** Buscador de libros.
 
 **FAQ:** Todo lo que necesitas saber de What I read next?
 
@@ -18,7 +18,8 @@ Te acabas un libro y no sabes qué libro empezar? ***What I read next?*** te da 
 
 ## Backlog    
 
-Extra features you want to add once your MVP is done
+- Tener un usuario donde poder tener tu lista de deseos
+- Compra directa al libro
 
 ## Wireframes    
 
@@ -29,7 +30,38 @@ Extra features you want to add once your MVP is done
 
 ## Data structure
 
-Classes and methods definition
+- root/
+
+  - index.html
+
+  - whatiread.html
+
+  - faq.html
+
+  - login.html
+
+  - signup.html
+
+  - css/
+
+    - style.css
+
+  - src/
+
+    - api.js
+    - buttons.js
+    - database.js
+    - login.js
+    - searchbyauthorortitle.js
+    - singup.js
+    - user.js
+    - validator.js
+
+  - img/
+
+    - all images
+
+      
 
 
 ## APIs
@@ -48,17 +80,6 @@ Google Books API
 ### Github
 
 URls for the project repo and deploy
-[Link Repo](http://github.com)
+[Link Repo](https://github.com/murbano17/whatiread-m1)
 [Link Deploy](http://github.com)
 
-
-### Slides
-
-URls for the project presentation (slides)
-<<<<<<< HEAD
-[Link Slides.com](http://slides.com)# whatiread-project1
-# whatiread-project1
-=======
-[Link Slides.com](http://slides.com)
->>>>>>> 2cabb45db3e7cae7dc53c24f5613e9ef5128d6e8
-# whatiread-project1
