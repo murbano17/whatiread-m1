@@ -364,6 +364,12 @@ img.logo {
 
 }
 
+.searchbar::placeholder {
+  color: #a5a5a5;
+  font-size: .9rem;
+  padding: 10px;
+}
+
 .button-search-bar {
   font-size: .7rem;
   width: 70px;
@@ -759,7 +765,8 @@ footer p {
 
 ::placeholder {
   color: #a5a5a5;
-  font-size: 1.5em;
+  font-size: .9rem;
+  padding:5px;
 }
 
 .message-container {
